@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Sachidanand Traders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        #section1 {
+            position: fixed;
+            z-index: 1000;
+            background-color: black !important;
+            color: rgb(63, 38, 5);
+            top: 0px;
+            width: 100%;
+            display: block;
+        }
+
+        #section1 a {
+            color: white !important;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+
+        #section1 a:hover,
+        #section1 .dropdown-item:hover {
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+            font-size: larger;
+        }
+
+        #section1 .dropdown-menu {
+            background-color: black !important;
+            border: 1px solid white;
+        }
+
+        #section1 .dropdown-menu a {
+            color: white !important;
+        }
+
+        #section1 .dropdown-menu a:hover {
+            background-color: #333;
+            color: white !important;
+
+        }
+
+        main {
+            margin-top: 3%;
+        }
+
+        #cards1 {
+            height: 250px;
+            cursor: pointer;
+        }
+
+        #pro {
+            cursor: grab;
+
+        }
+
+        #heading {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+
+        #footer {
+            color: white;
+            background-color: black;
+        }
+
+        .col,
+        #visitingCard {
+            transition: transform .2s;
+        }
+
+        .col:hover,
+        #visitingCard:hover {
+            transform: scale(1.1);
+        }
+
+        .float {
+            position: fixed;
+            transition: transform .2s;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .float:hover {
+            background-color: #23c25d;
+            transform: scale(1.1);
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+
+        @media (max-width:600px) {
+            #myCarousel {
+                display: none !important;
+            }
+        }
+
+        .carousel-caption {
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body class="home" id="home">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=9815233408" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <nav id="section1">
+        <div class="d-flex flex-column flex-md-row align-items-center p-0 m-0   ">
+            <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                <img src="components/sst-head.png" alt="" height="100px" width="100px">
+                <span class="fs-4">Shri Sachindand Traders</span>
+            </a>
+
+            <div class=" d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#home">Home</a>
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#heading">About</a>
+                <a class="nav-link dropdown-toggle me-3 py-2 link-body-emphasis text-decoration-none" href="products"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="components/Trauma.pdf">Trauma Implements</a></li>
+                    <li><a class="dropdown-item" href="components/BoneGraft.pdf">Bone Graft Substitute</a></li>
+                    <li><a class="dropdown-item" href="#">NeuroSurgery Products</a></li>
+                </ul>
+                <a class="py-2 link-body-emphasis text-decoration-none"
+                    href="#contact">Contact&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Carousel wrapper -->
+
+        <div id="myCarousel" class="carousel carousel-dark slide " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class="active" aria-current="true"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="bd-placeholder-img w-100" src="components/C.jpg">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h2>Championing healthcare innovation, we offer diverse, cutting-edge medical and surgical
+                                solutions.</h2>
+                            <p class="opacity-75">Explore products further. Click below for detailed information and
+                                assistance.</p>
+                            <p><a class="btn btn-lg btn-dark" href="tel:9815233408">Call Us</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img w-100" src="components/B.jpg">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h2>Championing healthcare innovation, we offer diverse, cutting-edge medical and surgical
+                                solutions.</h2>
+                            <p>Explore products further. Click below for detailed information and assistance..</p>
+                            <p><a class="btn btn-lg btn-dark" href="tel:9815233408">Call Us</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img w-100" src="components/A.jpg">
+                    <div class="container">
+                        <div class="carousel-caption ">
+                            <h2>Championing healthcare innovation, we offer diverse, cutting-edge medical and surgical
+                                solutions.</h2>
+                            <p>Explore products further. Click below for detailed information and assistance..</p>
+                            <p><a class="btn btn-lg btn-dark" href="tel:9815233408">Call Us</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="card text-center " id="heading">
+            <div class="card-header ">
+                <h2>ABOUT US</h2>
+                <div class="container marketing mb-4 mt-4">
+                    <!-- START THE FEATURETTES -->
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2">
+                            <h2 class="featurette-heading fw-normal lh-1"></h2>
+                            <p class="pt-4 mt-4" style="font-size: larger;"><span style="color: #FFF;">hello
+                                    everyone,<br /></span>the dynamic realm of medical and surgical
+                                equipment, Shri
+                                Sachidanand Traders
+                                stands as a trusted authority, specializing in bone graft solutions. As the authorized
+                                dealer of
+                                Basic HealthCare, Baddi, and Bioteck, we are committed to delivering cutting-edge
+                                products,
+                                ensuring excellence in healthcare with precision and integrity.</p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img class="w-100" id="visitingCard" src="components/card.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container -->
+        <div class="products">
+            <div class="card text-center ">
+                <div class="card-header ">
+                    <h2>OUR PRODUCTS</h2>
+                    <div class="row row-cols-1 m-1 row-cols-md-3 g-4">
+                        <a href="components/Trauma.pdf">
+                            <div class="col">
+
+                                <div class="card h-100">
+                                    <img src="components/safPlates.jpg" class="card-img-top" id="cards1" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SAF PLATES</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <a href="components/Trauma.pdf">
+                            <div class="col">
+                                <div class="card h-100 ">
+                                    <img src="components/SAFscrews.jpg" class="card-img-top" id="cards1" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SAF SCREWS</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="components/Trauma.pdf">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="components/SAFnails.jpg" class="card-img-top" alt="..." id="cards1"
+                                        height="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SAF NAILS</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="components/BoneGraft.pdf">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="components/b-ostin-rod.jpg" class="card-img-top" id="cards1" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ROD</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="components/BoneGraft.pdf">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="components/b-ostin-granules1.jpg" class="card-img-top" id="cards1"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">GRANULES</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="components/BoneGraft.pdf">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="components/b-ostin-block.jpg" class="card-img-top" id="cards1" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">BLOCK</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mod " id="contact">
+            <div class="card text-center">
+                <!-- Contact 1 - Bootstrap Brain Component -->
+                <section class="bg-light py-3 py-md-5">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                                <h2 class="mb-4 display-5 text-center">Contact Us</h2>
+                                <p class="text-secondary mb-5 text-center">The best way to contact us is to use our
+                                    contact form below. Please fill out all of the required fields and we will get back
+                                    to you as soon as possible.</p>
+                                <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row justify-content-lg-center">
+                            <div class="col-12 col-lg-9">
+                                <div class="bg-white border rounded shadow-sm overflow-hidden">
+
+                                    <form action="https://api.web3forms.com/submit" method="POST">
+                                        <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                            <div class="col-12">
+                                                <input type="hidden" name="access_key"
+                                                    value="0ccc425c-de96-477b-88cc-1115b831f383">
+                                                <label for="fullname" class="form-label">Full Name <span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="fullname" name="fullname"
+                                                    value="" required>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="email" class="form-label">Email </label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-envelope"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                        </svg>
+                                                    </span>
+                                                    <input type="email" class="form-control" id="email" name="email"
+                                                        value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="phone" class="form-label">Phone Number<span
+                                                        class="text-danger">*</span></label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-telephone"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                        </svg>
+                                                    </span>
+                                                    <input type="tel" class="form-control" id="phone" name="phone"
+                                                        value="" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="message" class="form-label">Message <span
+                                                        class="text-danger">*</span></label>
+                                                <textarea class="form-control" id="message" name="message" rows="3"
+                                                    required></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button class="btn btn-dark btn-lg" type="submit">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+            <section class="pt-4" id="footer">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Shri Sachidanand Traders
+                            </h6>
+                            <img src="components/sstLogo.png" alt="" height="250px">
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="Trauma.pdf" class="text-reset ">Trauma Implements</a>
+                            </p>
+                            <p>
+                                <a href="BoneGraft.pdf" class="text-reset">Bone Graft Substitute</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">NeuroSurgery Products</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">others</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i>Sector-45 , burrail , Chandigarh</p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                </svg>
+                                rajatkumarlupin@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+
+                                + 91 98152 33408</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                    © 2023 Copyright
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        </footer>
+        <!-- Footer -->
+    </main>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+
+</body>
+
+</html>
