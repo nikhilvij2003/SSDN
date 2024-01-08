@@ -128,9 +128,16 @@
             gap: 60px;
             }
         }
+        @media (max-width:600px){
+            .navSec{
+                display: none !important; 
+            }
+        }
         #cards{
             border-radius: 10px;
-            text-decoration: none;
+        }
+        .card-title, h5{
+            text-decoration: none !important;
         }
     </style>
 </head>
@@ -147,7 +154,7 @@
                 <span class="fs-4">Shri Sachidanand Traders</span>
             </a>
 
-            <div class=" d-inline-flex mt-2 mt-md-0 ms-md-auto" id="navSec">
+            <div class="navSec d-inline-flex mt-2 mt-md-0 ms-md-auto " id="navSec">
                 <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#home">Home</a>
                 <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#heading">About</a>
                 <a class="nav-link dropdown-toggle me-3 py-2 link-body-emphasis text-decoration-none" href="products"
@@ -246,78 +253,77 @@
                 <div class="card-header ">
                     <h2>OUR PRODUCTS</h2>
                     <div class="row row-cols-1 m-1 row-cols-md-3 g-4" >
-                        <a href="components/Trauma.pdf">
+                        
                             <div class="col">
-
                                 <div class="card h-100" id="cards">
-                                    <img src="components/safPlates.jpg" class="card-img-top" id="cards1" alt="...">
+                                    <a href="components/Trauma.pdf">
+                                    <img src="components/safPlates.jpg" class="card-img-top" id="cards1" alt="..."></a>
                                     <div class="card-body">
-                                        <h5 class="card-title text-docoration-none">SAF PLATES</h5>
+                                        <h5 class="card-title">SAF PLATES</h5>
                                         <p class="card-text"></p>
                                     </div>
+
                                 </div>
 
                             </div>
-                        </a>
+                        
 
-                        <a href="components/Trauma.pdf">
+                        
                             <div class="col" >
                                 <div class="card h-100 " id="cards">
-                                    <img src="components/SAFscrews.jpg" class="card-img-top" id="cards1" alt="...">
+                                    <a href="components/Trauma.pdf">
+                                    <img src="components/SAFscrews.jpg" class="card-img-top" id="cards1" alt="..."></a>
                                     <div class="card-body">
-                                        <h5 class="card-title text-docoration-none">SAF SCREWS</h5>
+                                        <h5 class="card-title">SAF SCREWS</h5>
                                         <p class="card-text"></p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                        <a href="components/Trauma.pdf">
+                        
                             <div class="col" >
                                 <div class="card h-100" id="cards">
+                                    <a href="components/Trauma.pdf">
                                     <img src="components/SAFnails.jpg" class="card-img-top" alt="..." id="cards1"
-                                        height="">
+                                        height=""></a>
                                     <div class="card-body">
-                                        <h5 class="card-title text-docoration-none">SAF NAILS</h5>
+                                        <h5 class="card-title">SAF NAILS</h5>
                                         <p class="card-text"></p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                        <a href="components/BoneGraft.pdf">
+                        
                             <div class="col" >
                                 <div class="card h-100" id="cards">
-                                    <img src="components/b-ostin-rod.jpg" class="card-img-top" id="cards1" alt="...">
+                                    <a href="components/BoneGraft.pdf">
+                                    <img src="components/b-ostin-rod.jpg" class="card-img-top" id="cards1" alt="..."></a>
                                     <div class="card-body">
-                                        <h5 class="card-title text-docoration-none">ROD</h5>
+                                        <h5 class="card-title">ROD</h5>
                                         <p class="card-text"></p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                        <a href="components/BoneGraft.pdf">
                             <div class="col" >
                                 <div class="card h-100" id="cards">
+                                    <a href="components/BoneGraft.pdf">
                                     <img src="components/b-ostin-granules1.jpg" class="card-img-top" id="cards1"
-                                        alt="...">
+                                        alt="..."></a>
                                     <div class="card-body">
-                                        <h5 class="card-title text-docoration-none">GRANULES</h5>
+                                        <h5 class="card-title">GRANULES</h5>
                                         <p class="card-text"></p>
                                     </div>
                                 </div>
 
                             </div>
-                        </a>
-                        <a href="components/BoneGraft.pdf">
                             <div class="col">
                                 <div class="card h-100" id="cards">
-                                    <img src="components/b-ostin-block.jpg" class="card-img-top" id="cards1" alt="...">
+                                    <a href="components/BoneGraft.pdf">
+                                    <img src="components/b-ostin-block.jpg" class="card-img-top" id="cards1" alt="..."></a>
                                     <div class="card-body">
-                                        <h5 class="card-title text-docoration-none">BLOCK</h5>
+                                        <h5 class="card-title">BLOCK</h5>
                                         <p class="card-text"></p>
                                     </div>
                                 </div>
                             </div>
-                        </a>
                     </div>
                 </div>
             </div>
